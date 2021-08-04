@@ -322,8 +322,8 @@ footer p {
 ========================================================================================
 ==========================================================================================*/
 
-.campaign-main {
-	background-image: url("img/brick-01.png");
+.work-document {
+	background-image: url("img/murral-vertical-01.png");
 	background-repeat: no-repeat;
 	background-size: 100vw;
 	background-attachment: fixed;
@@ -333,6 +333,15 @@ footer p {
 
 /*================================
 ================HERO===================*/
+
+.campaign-hero-container {
+	/*background-image: url("img/murral-vertical.pmg");
+	background-size: 100vh;
+	height: 900px;*/
+	
+}
+
+
 
 .campaign-hero {
 	/*padding: 40px;*/
@@ -352,8 +361,8 @@ footer p {
 	height: 55px;
 	width: 250px;
 	margin-bottom: 25px;
-	background-color:rgba(255, 255, 255, .4);
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	background-color:rgba(255, 255, 255);
+	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
 	right: 0px;
 		padding-right: 15px;
 
@@ -362,13 +371,13 @@ footer p {
 
 .campaign-hero h3 {
 	font-weight: 200;
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	right: 0;
 	padding-right: 15px;
-	background-color:rgba(255, 255, 255, .4);
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	background-color:rgba(255, 255, 255);
+	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
 	
 }
 
@@ -377,15 +386,24 @@ footer p {
 /*==================================
 =================ICONS====================*/
 
+.above-all {
+	content: '';
+	height:10px;
+	margin-bottom: 100px;
+}
 
+.icon-container {
+	height: 800px;
+	width: 80vw;
+}
+.icon-inner {
+	height: 700px;
+	width: 75%;
 
-.icon-conatiner {
-	width: 100vw;
 	background-color:rgba(255, 255, 255, .4);
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
-	height: 1200px;
-	
-	/*margin-top: 80px;*/
+	margin: 0 auto;
+	position: relative;
 
 }
 
@@ -393,10 +411,6 @@ footer p {
 	padding-top: 80px;
 	height: 500px;
 	width: 75vw;
-	/*background:white;*/
-	/*border: 3px solid rgba(44, 88, 168, 1);
-	border-radius: 20px;
-	padding: 20px;*/
 
 } 
 
@@ -421,8 +435,9 @@ footer p {
 }
 
 
+
 .carousel {
-	top: 400PX;
+	/*top: 400PX;*/
 	position: relative;
 	height: 700px;
 	width: 75%;
