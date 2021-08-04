@@ -28,7 +28,6 @@ header {
 }
 
 
-
 .scrolled {
 	height: 100px;
 }
@@ -72,6 +71,7 @@ header {
 	margin-left:20px;
 	height: 0px;
     overflow: hidden;
+    z-index: 999;
 }
 
 .site-nav ul {
@@ -296,23 +296,6 @@ nav a:hover {
 	font-weight: 200;
 }
 
-.icon-bar {
-	height: 150px;
-	margin: 70px;
-	background:white;
-	border: 3px solid rgba(44, 88, 168, 1);
-	border-radius: 20px;
-	padding: 20px;
-
-} 
-
-.icons {
-	height: 100px;
-	top: 0;
-	display: inline;
-	margin: 0 40px;
-
-}
 
 
 footer {
@@ -338,21 +321,116 @@ footer p {
 ================================CAMPAIGN WORK PAGE================================
 ========================================================================================
 ==========================================================================================*/
-.campaign-intro {
-	padding: 50px;
-	text-align: center;
-	height: 120px;
+
+.campaign-main {
+	background-image: url("img/brick-01.png");
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-attachment: fixed;
+
 }
+
+
+/*================================
+================HERO===================*/
+
+.campaign-hero {
+	/*padding: 40px;*/
+	text-align: right;
+	
+	margin-top: 70px;
+	right:0;
+	
+	position: fixed;
+	z-index: 1;
+	
+}
+
+.campaign-hero h1 {
+	font-weight: 200;
+	padding-bottom: 5px;
+	height: 55px;
+	width: 250px;
+	margin-bottom: 25px;
+	background-color:rgba(255, 255, 255, .4);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	right: 0px;
+		padding-right: 15px;
+
+
+}
+
+.campaign-hero h3 {
+	font-weight: 200;
+	margin-left: 25px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	right: 0;
+	padding-right: 15px;
+	background-color:rgba(255, 255, 255, .4);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	
+}
+
+
+
+/*==================================
+=================ICONS====================*/
+
+
+
+.icon-conatiner {
+	width: 100vw;
+	background-color:rgba(255, 255, 255, .4);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	height: 1200px;
+	
+	/*margin-top: 80px;*/
+
+}
+
+.icon-table {
+	padding-top: 80px;
+	height: 500px;
+	width: 75vw;
+	/*background:white;*/
+	/*border: 3px solid rgba(44, 88, 168, 1);
+	border-radius: 20px;
+	padding: 20px;*/
+
+} 
+
+.icons {
+	height: 100px;
+	top: 0;
+	display: inline;
+	margin: 0 40px;
+
+}
+
+
+
 
 
 /*======================================
 =====================Brand Elements========= */
 
+.carousel-container {
+	height: 1200px;
+	width: 80vw;
+}
+
+
 .carousel {
+	top: 400PX;
 	position: relative;
 	height: 700px;
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
+	background-color: rgba(255, 255, 255, .4);
+	padding: 40px;
+	/*margin-bottom: 100px;*/
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
 }
 
 .brand-dev-images {
@@ -397,6 +475,7 @@ footer p {
 	transform: translateY(-50%);
 	background-color: transparent;
 	border: 0;
+
 	
 }
 
@@ -409,6 +488,7 @@ footer p {
 	background-color: transparent;
 	border: 0;
 
+	
 }
 
 
@@ -433,7 +513,7 @@ footer p {
 	border-radius: 50px;
 	width: 15px;
 	height: 15px;
-	background: silver;
+	background: #282828;
 	margin: 0 10px;
 	cursor: pointer;
 }
@@ -456,6 +536,12 @@ footer p {
 }
 
 
+/*==========================END CAROUSEL
+===============================================*/
+.below-carousel {
+	height: 1600px;
+	top: 1400px;
+}
 
 
 

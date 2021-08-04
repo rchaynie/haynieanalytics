@@ -24,9 +24,9 @@ slides.forEach(setSlidePosition);
 const moveToSlide = (track, currentSlide, targetSlide) => {
 	track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
 	currentSlide.classList.remove('current-slide');
-	currentSlide.classList.add('is-hidden');
+	// currentSlide.classList.add('is-hidden');
 	targetSlide.classList.add('current-slide');
-	targetSlide.classList.remove('is-hidden');
+	// targetSlide.classList.remove('is-hidden');
 }
 
 const updateDots = (currentDot, targetDot) => {
@@ -96,12 +96,15 @@ dotsNav.addEventListener('click', e => {
 
 
 
-
-
-
 });
 
-	
+
+
+const viewPort = document.querySelector('.carousel__track-container');
+const viewPortWidth = viewPort.getBoundingClientRect().width;
+console.log(viewPortWidth);
+
+console.log(slideWidth)
 
 
 
