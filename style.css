@@ -351,10 +351,8 @@ footer p {
 .carousel {
 	position: relative;
 	height: 700px;
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
-		object-fit: cover;
-
 }
 
 .brand-dev-images {
@@ -364,10 +362,10 @@ footer p {
 }
 
 .carousel__track-container {
-	/*background: lightgreen;*/
 	position: relative;
 	height:100%;
 	width: 100%;
+	overflow: hidden;
 }
 
 .carousel__track {
@@ -375,6 +373,9 @@ footer p {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	position: relative;
+	height: 100%;
+	transition: transform 350ms ease-in;
 
 
 }
@@ -384,9 +385,9 @@ footer p {
 	width: 100%;
 	top: 0;
 	bottom: 0;
+	object-fit: cover;
 	
 }
-
 
 .carousel__button--left {
 	position: absolute;
@@ -410,6 +411,16 @@ footer p {
 
 }
 
+
+.carousel__button--right:focus {
+	outline: none;
+}
+
+.carousel__button--left:focus {
+	outline: none;
+}
+
+
 .carousel__nav {
 /*	background: pink;
 */	display: flex;
@@ -424,12 +435,25 @@ footer p {
 	height: 15px;
 	background: silver;
 	margin: 0 10px;
+	cursor: pointer;
 }
+
+
+
+.carousel__indicator:focus {
+	border: none;
+	outline: none;
+}
+
 
 .carousel__indicator.current-slide {
 	background-color: rgba(44, 88, 168, 1);
 }
 
+
+.is-hidden {
+	display: none;
+}
 
 
 
