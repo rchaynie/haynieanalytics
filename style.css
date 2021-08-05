@@ -5,6 +5,14 @@
 }
 
 
+p {
+	font-weight: 200;
+}
+
+
+
+
+
 body {
 	/*background-image: url("logo bckgrnd-01.png");*/
 /*	background-attachment: fixed;
@@ -335,10 +343,8 @@ footer p {
 ================HERO===================*/
 
 .campaign-hero-container {
-	/*background-image: url("img/murral-vertical.pmg");
-	background-size: 100vh;
-	height: 900px;*/
-	
+	/*background-image: url("img/murral-vertical.pmg");*/
+	background-size: 100vh;	
 }
 
 
@@ -359,32 +365,102 @@ footer p {
 	font-weight: 200;
 	padding-bottom: 5px;
 	height: 55px;
-	width: 250px;
+	width: 215px;
 	margin-bottom: 25px;
 	background-color:rgba(255, 255, 255);
 	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
 	right: 0px;
-		padding-right: 15px;
-
+	/*padding-right: 15px;*/
+	text-align: center;
 
 }
 
 .campaign-hero h3 {
 	font-weight: 200;
+	font-size: 22px;
 	/*margin-left: 25px;*/
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	right: 0;
 	padding-right: 15px;
 	background-color:rgba(255, 255, 255);
+	text-align: center;
 	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
 	
 }
 
 
+.campaign-hero a {
+	color: #282828;
+}
+
+.campaign-hero a:hover {
+    text-decoration: none;
+	color: limegreen;
+	background-color: #282828;
+}
+
+
+/*==================================
+=================Section headers ===========*/
+
+.section-header {
+	height: 80px;
+	width:80vw;
+
+}
+.section-header-content {
+	background-color: rgba(44, 88, 168, 1);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section-header h1 {
+	/*margin-left: 15%;*/
+	padding: 5px;
+	color: white;
+}
+
+
+
+
+
+
+/*==================================
+=================Work Overview====================*/
+
+
+
+.work-overview {
+	height: 800px;
+	width: 80vw;
+	margin-top: 10px;
+
+
+}
+
+
+.overview-inner {
+	height: 600px;
+	width: 75%;
+	padding: 20px;
+	background-color:rgba(255, 255, 255, .5);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+
+
 
 /*==================================
 =================ICONS====================*/
+
+
 
 .above-all {
 	content: '';
@@ -393,33 +469,65 @@ footer p {
 }
 
 .icon-container {
-	height: 800px;
+	height: 1200px;
 	width: 80vw;
 }
 .icon-inner {
-	height: 700px;
+	height: 1000px;
 	width: 75%;
-
-	background-color:rgba(255, 255, 255, .4);
+	/*padding: 20px;*/
+	background-color:rgba(255, 255, 255, .5);
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
 	margin: 0 auto;
 	position: relative;
 
 }
 
+
+.row {
+	margin: 30px;
+} 
+
+
+
+.icon-table .col {
+		/*margin-bottom: -850px;*/
+
+}
+
+
 .icon-table {
-	padding-top: 80px;
-	height: 500px;
+	
+	height: 275px;
 	width: 75vw;
+	
 
 } 
 
+
+
+.icon-table .row {
+	margin-left: -70px;
+	margin-right: 120px;
+	padding: 20px;
+ }
+
+.description {
+	width: 75%;
+	margin-left: 50px;
+}
+
+
+
 .icons {
 	height: 100px;
-	top: 0;
-	display: inline;
-	margin: 0 40px;
 
+
+}
+
+.icon-description {
+	padding-left: 100px;
+	/*margin-left: 100px;*/
 }
 
 
@@ -430,7 +538,7 @@ footer p {
 =====================Brand Elements========= */
 
 .carousel-container {
-	height: 1200px;
+	height: 900px;
 	width: 80vw;
 }
 
@@ -442,7 +550,7 @@ footer p {
 	height: 700px;
 	width: 75%;
 	margin: 0 auto;
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 255, 255, .5);
 	padding: 40px;
 	/*margin-bottom: 100px;*/
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);

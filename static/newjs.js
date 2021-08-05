@@ -27,7 +27,8 @@ window.addEventListener("scroll", function(){
 
 
 
-
+// =============================SMOOTH SCROLLING =========
+// ============================================================================
 
 function smoothScroll(target,duration,targetPosition){
     target = document.querySelector(target);
@@ -59,11 +60,6 @@ function smoothScroll(target,duration,targetPosition){
 }
 
 
-scrollDownClick.addEventListener("click", function() {
-	smoothScroll(".box1",950, 755)
-
-
-})
 
 window.addEventListener("scroll", function(){
 	let offset = window.pageYOffset;
@@ -76,4 +72,19 @@ window.addEventListener("scroll", function(){
 });
 
 
+scrollDownClick.addEventListener("click", function() {
+	smoothScroll(".box1",950, 755)
+})
 
+
+scrollDownClick.addEventListener("click", function() {
+	smoothScroll(".box1",950, 755)
+})
+
+
+const workScroll = document.getElementById('work-scroll');
+const servicesScroll = document.getElementById('services-scroll');
+const brandingScroll = document.getElementById('branding-scroll');
+const mailScroll = document.getElementById('mail-scroll');
+
+console.log(servicesScroll)
