@@ -15,7 +15,6 @@ const scrollDownClick = document.getElementById("scroll-down");
 
 window.addEventListener("scroll", function(){
 	let offset = window.pageYOffset;
-	console.log(offset);
 	parallax1.style.backgroundPositionY = offset * 0.7 + "px";
 	if(offset >=599){
 		altLogo.style.display="block";
@@ -72,14 +71,7 @@ window.addEventListener("scroll", function(){
 });
 
 
-scrollDownClick.addEventListener("click", function() {
-	smoothScroll(".box1",950, 755)
-})
 
-
-scrollDownClick.addEventListener("click", function() {
-	smoothScroll(".box1",950, 755)
-})
 
 
 const workScroll = document.getElementById('work-scroll');
@@ -88,3 +80,50 @@ const brandingScroll = document.getElementById('branding-scroll');
 const mailScroll = document.getElementById('mail-scroll');
 
 console.log(servicesScroll)
+
+
+
+const brandIcon = document.getElementById('brand-icon');
+const brandDiv = document.getElementById('branding-full');
+const gcICON = document.getElementById('gc-icon');
+const gcDiv = document.getElementById('gencon-full');
+
+console.log(brandIcon);
+
+brandIcon.addEventListener("click", function(){
+	smoothScroll('.branding-full', 950, 555)
+	if(brandDiv.style.display === "none"){
+		brandDiv.style.display = "block";
+	}
+	else {
+		brandDiv.style.display = "none";
+	}
+})
+
+gcICON.addEventListener("click", function(){
+	smoothScroll('.branding-full', 950, 555)
+	if(brandDiv.style.display === "none"){
+		gcICON.style.display = "block";
+	}
+	else {
+		gcICON.style.display = "none";
+	}
+})
+
+
+
+
+scrollDownClick.addEventListener("click", function() {
+	smoothScroll(".box1",950, 755)
+})
+
+
+scrollDownClick.addEventListener("click", function() {
+	smoothScroll(".box1",950, 755)
+})
+
+
+
+
+
+
